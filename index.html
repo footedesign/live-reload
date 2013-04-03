@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Live Browser Reloading</title>
+		<meta name="description" content="How to implement live browser reloading for easier front-end development">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>Live Browser Reloading</h1>
+					<h3>Make front end development easier</h3>
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							Your typical web dev flow might go something like this&#8230;
+						</h2>
+						<ol>
+							<li class="fragment">
+								Write some <code>code</code> in your text editor of choice
+							</li>
+							<li class="fragment">
+								Switch to your browser window and reload the page
+							</li>
+							<li class="fragment">
+								Switch back to your text editor and repeat the process
+							</li>
+						</ol>
+					</section>
+					<section>
+						<h1>Let's make that process easier</h1>
+						<p class="rainbow">Demo time!</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>The quick and free way</h2>
+					<p>
+						You will need:
+					</p>
+					<ul>
+						<li><a href="http://www.sublimetext.com/">Sublime Text</a> with <a href="http://wbond.net/sublime_packages/package_control/installation">Sublime Package Control</a> installed</li>
+						<li>Chrome or Firefox</li>
+						<li>The <a href="http://livereload.com/">LiveReload</a> browser extension
+							<ul>
+								<li>For <a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">Chrome</a></li>
+								<li>For <a href="http://download.livereload.com/2.0.8/LiveReload-2.0.8.xpi">Firefox</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Let's begin</h2>
+					<ol>
+						<li>
+							In Sublime: <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+						</li>
+						<li>
+							Type &ldquo;install&rdquo; and hit enter on &ldquo;Package Control: Install Package&rdquo;
+						</li>
+						<li>
+							To install the LiveReload package, simply type &ldquo;livereload&rdquo; and hit enter
+						</li>
+						<li>
+							After a few seconds the package should install
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>A few tips</h2>
+					<ul>
+						<li class="fragment">
+							LiveReload toolbar button is located in the toolbar in Chrome, and in the Add-on Toolbar in Firefox (at the bottom).
+						</li>
+						<div class="fragment">
+							<li>
+								The icon indicates LiveReload status of the current tab (unavailable / disabled / enabled).
+							</li>
+							<img height="100" src="i/unavailable.png">
+							<img height="100" src="i/disabled.png">
+							<img height="100" src="i/enabled.png">
+						</div>
+						<div class="fragment">
+							<li>
+								Chrome: If you want to use it with local files, be sure to enable “Allow access to file URLs” checkbox in Tools > Extensions > LiveReload after installation.
+							</li>
+							<img src="i/chrome-livereload.png">
+						</div>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h1>Other methods</h1>
+					</section>
+					<section>
+						<h2>LiveReload</h2>
+						<p>&ldquo;CSS edits and image changes apply live. CoffeeScript, SASS, LESS and others just work.&rdquo;</p>
+						<p>For Mac &mdash; $9.99 &amp; Windows alpha &mdash; Free</p>
+						<a href="http://livereload.com/">
+							<img src="i/livereload.png">
+						</a>
+					</section>
+					<section>
+						<h2>CodeKit</h2>
+						<p>&ldquo;It&rsquo;s like steroids for web developers.&rdquo;</p>
+						<p>Mac only &mdash; $25</p>
+						<a href="http://incident57.com/codekit/">
+							<img src="i/codekit.png">
+						</a>
+					</section>
+					<section>
+						<h2>Compass App</h2>
+						<p>&ldquo;Compass.app is a menubar only app for Sass and Compass. It helps designers compile stylesheets easily without resorting to command line interface.&rdquo;</p>
+						<p>All platforms &mdash; $10</p>
+						<a href="http://compass.handlino.com/">
+							<img src="i/compass.png">
+						</a>
+					</section>
+					<section>
+						<h2>Scout</h2>
+						<p>&ldquo;Scout is a cross-platform app that delivers the power of Sass &amp; Compass into the hands of web designers.&rdquo;</p>
+						<p>Mac &amp; Windows &mdash; Free</p>
+						<a href="http://mhs.github.com/scout-app/">
+							<img src="i/scout.png">
+						</a>
+					</section>
+					<section>
+						<h2>Mixture</h2>
+						<p>&ldquo;A rapid prototyping and static site generation tool for designers and developers&rdquo;</p>
+						<p>Mac &amp; Windows &mdash; Free</p>
+						<a href="http://mixture.io/">
+							<img src="i/mixture.jpg">
+						</a>
+					</section>
+					<section>
+						<h2>Koala</h2>
+						<p>&ldquo;Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation, to help web developers to use them more efficient. Koala can run in windows, linux and mac.&rdquo;</p>
+						<a href="http://koala-app.com/">
+							<img src="i/koala.png">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<p>Built with <a href="http://lab.hakim.se/reveal-js/">reveal.js</a> by <a href="http://hakim.se">Hakim</a></p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true
+			});
+		</script>
+	</body>
+</html>
