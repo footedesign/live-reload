@@ -55,6 +55,7 @@
 					</p>
 					<ul>
 						<li><a href="http://www.sublimetext.com/">Sublime Text</a> with <a href="http://wbond.net/sublime_packages/package_control/installation">Sublime Package Control</a> installed</li>
+						<li><a href="https://github.com/dz0ny/LiveReload-sublimetext2">LiveReload</a> Sublime Text plugin</li>
 						<li>Chrome or Firefox</li>
 						<li>The <a href="http://livereload.com/">LiveReload</a> browser extension
 							<ul>
@@ -67,9 +68,27 @@
 
 				<section>
 					<h2>Let's begin</h2>
+					<h3>Installing Package Control</h3>
 					<ol>
 						<li>
-							In Sublime: <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+							In Sublime: <kbd>control</kbd> + <kbd>`</kbd>
+						</li>
+						<li>
+							Paste:
+							<pre><code>import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
+							</code></pre>
+						</li>
+						<li>
+							Hit enter. After a few seconds the Package Control<br> should install
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Installing LiveReload Plugin</h3>
+					<ol>
+						<li>
+							In Sublime: <kbd>&#8984;</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
 						</li>
 						<li>
 							Type &ldquo;install&rdquo; and hit enter on &ldquo;Package Control: Install Package&rdquo;
@@ -81,10 +100,13 @@
 							After a few seconds the package should install
 						</li>
 					</ol>
+					<p>&nbsp;</p>
+					<h3>Now you should be all set</h3>
+					<p>If you find Sublime crashing often, <a href="https://github.com/dz0ny/LiveReload-sublimetext2/issues/15#issuecomment-9006198">refer here</a>.</p>
 				</section>
 
 				<section>
-					<h2>A few tips</h2>
+					<h2>A few tips for browser extensions</h2>
 					<ul>
 						<li class="fragment">
 							LiveReload toolbar button is located in the toolbar in Chrome, and in the Add-on Toolbar in Firefox (at the bottom).
